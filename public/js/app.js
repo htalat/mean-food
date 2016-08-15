@@ -1,1 +1,1 @@
-var app = angular.module('DataLoader', ['ngRoute']);
+var app = angular.module('DataLoader', ['ngRoute','ngAnimate', 'toastr']);

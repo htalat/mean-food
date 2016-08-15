@@ -3,7 +3,7 @@
      <div class="row">
        <div class="col-md-12 jumbotron">
          <h1>Fill Up Form for a business</h1>
-         <form name="businessForm">
+         <form name="businessForm" ng-model="businessForm">
            <div class="form-group">
              <label class="control-label">Name</label>
              <input class="form-control" type="text" ng-model="form.name" required>
@@ -42,8 +42,8 @@
            </div>
            <div class="form-group">
              <label class="control-label">Open 24 hours?</label>
-             <input type="radio" name="openAllDay" value="1" ng-model="form.isOpenAllDay"> Yes
-             <input type="radio" name="openAllDay" value="0"  ng-model="form.isNotOpenAllDay"> No
+             <input type="radio" name="openAllDay" value="true" ng-model="form.isOpenAllDay"> Yes
+             <input type="radio" name="openAllDay" value="false"  ng-model="form.isNotOpenAllDay"> No
              <br>
            </div>
            <div class="form-group">
@@ -62,4 +62,3 @@
      </div>
    </div>
  </div>
-<!--ng-disabled="businessForm.$invalid" -->
