@@ -19,7 +19,7 @@ module.exports = function(app) {
 		console.log('req',req.body);
 		var data = JSON.stringify(req.body);
 		console.log(data);
-		fs.writeFile("./tmp/test.txt", data,'utf8' ,function(err) {
+		fs.writeFile("./tmp/"+req.body.dateCreated+".txt", data,'utf8' ,function(err) {
 	    if(err) {
 	        return console.log(err);
 	    }
